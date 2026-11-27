@@ -1,0 +1,200 @@
+.header-img {
+    width: 100%;
+    height: 250px;
+}
+nav {
+  background-color: #a3d977;
+  text-align: center;
+  padding: 10px;
+}
+.topnav {
+    background-color: #a3d977;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 10px;
+}
+
+.topnav img {
+    height: 33px;
+    margin: 0 8px;
+    vertical-align: middle;
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.topnav img:hover {
+    transform: scale(1.12);
+}
+
+.topnav img[src="Kerja Sama.png"] {
+    transform: scale(1.54);
+    margin: 0 30px;
+}
+
+.topnav img[src="Kerja Sama.png"]:hover {
+    transform: scale(1.7);
+}
+
+body{
+  margin: 0;
+  background-color: #e9fff8;
+}
+.sdg-card {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    background-color: #ffffff;
+    width: 80%;
+    margin: 40px auto;
+    padding: 35px 45px;
+    border-radius: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+}
+.sdg-text {
+    flex: 1;
+}
+.sdg-text h2 {
+    color: #2c3e2e;
+    font-size: 28px;
+    margin: 0 0 18px 0;
+    padding-bottom: 10px;
+    border-bottom: 1.5px solid #4a5d4e;
+}
+.sdg-text hr {
+    border: none;
+    height: 1.5px;
+    background-color: #4a5d4e;
+    margin-bottom: 18px;
+}
+.sdg-text p {
+    color: #333333;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin: 0;
+}
+.sdg-image {
+    flex: 1;
+}
+.sdg-image img {
+    width: 100%;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    display: block;
+}
+.card-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 25px;
+    margin: 40px auto;
+    flex-wrap: wrap;
+}
+
+.sdg-box {
+    width: fit-content;
+    max-width: 220px;
+    background-color: #ffffff;
+    border: 3px solid #527693;
+    border-radius: 20px;
+    padding: 18px;
+    text-align: center;
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.35s ease, border-color 0.35s ease;
+}
+
+.sdg-box img {
+    width: 140px;
+    height: 140px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.info-hover {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    color: #3b657f;
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0;
+    transition: max-height 0.4s ease, opacity 0.35s ease, margin-top 0.35s ease;
+}
+
+.sdg-box:hover {
+    background-color: #bbf7ff;
+    border-color: #54b4a4;
+    transform: scale(1.05);
+}
+
+.sdg-box:hover .info-hover {
+    max-height: 200px;
+    opacity: 1;
+    margin-top: 12px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffffff;
+    padding: 12px 22px;
+    border: 3px solid #a3d977;
+    border-radius: 18px;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    z-index: 9999;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+}
+
+.dropdown-content img {
+    height: 36px;
+    width: auto;
+    margin: 0;
+    transition: transform 0.25s ease;
+}
+
+.dropdown-content img[src="Bilateral.png"] {
+    transform: scale(1.45);
+}
+
+.dropdown-content img[src="Regional.png"] {
+    transform: scale(1.25);
+}
+
+.dropdown-content img[src="Multilateral.png"] {
+    transform: scale(1.1);
+}
+
+.dropdown-content a:hover img {
+    transform: scale(1.1);
+}
+
+.dropdown-content a:hover img[src="Bilateral.png"] {
+    transform: scale(1.58);
+}
+
+.dropdown-content a:hover img[src="Regional.png"] {
+    transform: scale(1.38);
+}
+
+.dropdown-content a:hover img[src="Multilateral.png"] {
+    transform: scale(1.22);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
